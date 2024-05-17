@@ -103,7 +103,7 @@ main {
     padding: 20px;
     margin: auto;
     max-width: 1200px; /* Ensures the content does not stretch too wide */
-    margin-top: 80px; /* Adjust for fixed header height */
+    margin-top: 1px; /* Adjust for fixed header height */
 }
 
 section {
@@ -323,3 +323,13 @@ article .article-header {
     justify-content: space-between;
 }
 
+/* Add this to your existing CSS */
+.article-header {
+    outline: none;
+}
+
+.article-header:focus {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 0 3px #ff7900; /* Change to your desired highlight color */
+}
