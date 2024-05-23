@@ -43,19 +43,23 @@ nav a {
 
 nav a:hover,
 nav a.current {
-    background-color: #4C944C; /* Lighter green for hover state */
+    background-color: #448344; /* Lighter green for hover state */
     border-color: #FFFFFF; /* White border on hover */
 }
 
 /* Hero Section Styles */
 .hero {
+    background-color: black;
     background-image: url('../images/Hike\ 7.jpeg'); /* Replace with your hero image */
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
     color: white;
     text-align: center;
+    margin: -20px;
+    margin-top: -40px;
     position: relative;
+    margin-bottom: 10px;
 }
 
 .hero::after {
@@ -84,7 +88,7 @@ nav a.current {
 }
 
 .hero .btn {
-    background-color: #FF7900; /* Button color */
+    background-color: #B85600; /* Button color */
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -100,7 +104,7 @@ nav a.current {
 main {
     padding: 20px;
     margin: auto;
-    max-width: 1200px; /* Ensures the content does not stretch too wide */
+    /*max-width: 1200px;  Ensures the content does not stretch too wide */
     margin-top: 1px; /* Adjust for fixed header height */
 }
 
@@ -172,6 +176,8 @@ footer p {
 #skip:focus {
     left: 10px; /* Better visibility when focused */
     transition: 1s; /* Smooth transition for focus */
+    z-index: 999;
+    color: red;
 }
 
 html {
@@ -187,7 +193,7 @@ article {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-article h3 {
+article h2 {
     color: #333; /* Dark color for headings */
 }
 
@@ -220,7 +226,7 @@ article {
     border-radius: 10px; /* Rounded corners */
 }
 
-article h3 {
+article h2 {
     color: #2A482A; /* Dark green for emphasis */
     font-weight: bold;
     margin-top: 0;
